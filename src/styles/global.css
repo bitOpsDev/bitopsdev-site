@@ -121,7 +121,6 @@ hr {
 		padding: 1em;
 	}
 }
-
 .sr-only {
 	border: 0;
 	padding: 0;
@@ -130,12 +129,133 @@ hr {
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
-	/* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
 	clip: rect(1px 1px 1px 1px);
-	/* maybe deprecated but we need to support legacy browsers */
 	clip: rect(1px, 1px, 1px, 1px);
-	/* modern browsers, clip-path works inwards from each corner */
 	clip-path: inset(50%);
-	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
+}
+
+/* ============================================================
+   DARK THEME — applied when <html data-theme="dark">
+   ============================================================ */
+
+[data-theme="dark"] {
+	--accent:     #00e5ff;
+	--accent-dark: #00b8cc;
+	--black:      220, 230, 255;
+	--gray:       100, 120, 150;
+	--gray-light: 30, 42, 53;
+	--gray-dark:  200, 210, 230;
+	--gray-gradient: rgba(22, 28, 36, 1), rgba(13, 17, 23, 1);
+	--box-shadow:
+		0 2px 6px rgba(0, 0, 0, 40%),
+		0 8px 24px rgba(0, 0, 0, 30%),
+		0 16px 32px rgba(0, 0, 0, 20%);
+}
+
+[data-theme="dark"] body {
+	background: #0d1117;
+	color: rgb(var(--gray-dark));
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+	color: #ffffff;
+}
+
+[data-theme="dark"] code {
+	background-color: rgb(var(--gray-light));
+	color: var(--accent);
+}
+
+[data-theme="dark"] hr {
+	border-top-color: rgb(var(--gray-light));
+}
+
+[data-theme="dark"] header {
+	background: rgba(13, 17, 23, 0.85);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	box-shadow: 0 1px 0 rgb(var(--gray-light));
+}
+
+[data-theme="dark"] nav a {
+	color: rgb(var(--gray-dark));
+}
+
+[data-theme="dark"] nav a.active {
+	border-bottom-color: var(--accent);
+}
+
+[data-theme="dark"] footer {
+	background: #0d1117;
+	border-top: 1px solid rgb(var(--gray-light));
+}
+
+/* Scrollbar */
+[data-theme="dark"] ::-webkit-scrollbar { width: 6px; }
+[data-theme="dark"] ::-webkit-scrollbar-track { background: #0d1117; }
+[data-theme="dark"] ::-webkit-scrollbar-thumb { background: #1e2a35; border-radius: 3px; }
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* Selection */
+[data-theme="dark"] ::selection {
+	background: var(--accent);
+	color: #0d1117;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: zoom-in;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 229, 255, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+/* Simple Lightbox Style */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
 }
