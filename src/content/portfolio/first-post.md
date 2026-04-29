@@ -2,15 +2,15 @@
 title: '3-in-1 UI Waves - Signal, Monitor, Audio Waveforms'
 description: "A modular 3-in-1 waveform system for Unity UGUI — Signal Waves, Monitor Scans, and Audio Reactive Meters"
 pubDate: 2026-04-28
-heroImage: "../../assets/portfolio/signal-wave-hero.jpg"
+heroImage: "/public/images/portfolio/signal-wave-hero.jpg"
 tags: ["Unity Asset", "UI", "Tool", "Audio Reactive"]
 ---
 
 <div class="gallery-grid">
-        <img src="../../src/assets/portfolio/signal-wave-1.jpg" alt="Signal Wave System" />
-        <img src="../../src/assets/portfolio/signal-wave-2.jpg" alt="Monitor Scan Wave" />
-        <img src="../../src/assets/portfolio/signal-wave-3.jpg" alt="Audio Reactive Meter" />
-        <img src="../../src/assets/portfolio/signal-wave-4.jpg" alt="Sci-fi HUD Example" />
+        <img src="/public/images/portfolio/signal-wave-1.jpg" alt="Signal Wave System" />
+        <img src="/public/images/portfolio/signal-wave-2.jpg" alt="Monitor Scan Wave" />
+        <img src="/public/images/portfolio/signal-wave-3.jpg" alt="Audio Reactive Meter" />
+        <img src="/public/images/portfolio/signal-wave-4.jpg" alt="Sci-fi HUD Example" />
 </div>
 
 
