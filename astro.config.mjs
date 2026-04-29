@@ -1,13 +1,15 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import cloudflare from '@astrojs/cloudflare';
+import mdx from '@astrojs/mdx';
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://bitopsdev.com',
-  output: 'static',
 
-  adapter: cloudflare({
-    imageService: 'passthrough',
-  }),
+  output: 'static',        // Pure static
+
+  integrations: [mdx(), sitemap()],
+
+  // No Cloudflare adapter for now
 });
