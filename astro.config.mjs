@@ -3,13 +3,17 @@ import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
+import cloudflare from '@astrojs/cloudflare';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://bitopsdev.com',
 
-  output: 'static',        // Pure static
-
-  integrations: [mdx(), sitemap()],
+  // Pure static
+  output: 'static',
 
   // No Cloudflare adapter for now
+  integrations: [mdx(), sitemap()],
+
+  adapter: cloudflare()
 });
