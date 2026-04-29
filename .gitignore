@@ -41,6 +41,10 @@ build/Release
 node_modules/
 jspm_packages/
 
+# Astro build outputs
+dist/
+.astro/
+
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 
