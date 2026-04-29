@@ -2,7 +2,7 @@
 title: "bitopsdev.com is Now Live"
 description: "After years on the old site, BitOpsDev has a new home."
 pubDate: 2026-04-28
-heroImage: "/images/blog/blog-placeholder-about.jpg"
+heroImage: "/public/images/blog/blog-placeholder-about.jpg"
 ---
 
 After a long time running **Info Gamer Hub**, I’ve finally launched the new **BitOpsDev** website.
