@@ -7,10 +7,10 @@ tags: ["Unity Asset", "UI", "Tool", "Audio Reactive"]
 ---
 
 <div class="gallery-grid">
-        <img src="/public/images/portfolio/signal-wave-1.jpg" alt="Signal Wave System" />
-        <img src="/public/images/portfolio/signal-wave-2.jpg" alt="Monitor Scan Wave" />
-        <img src="/public/images/portfolio/signal-wave-3.jpg" alt="Audio Reactive Meter" />
-        <img src="/public/images/portfolio/signal-wave-4.jpg" alt="Sci-fi HUD Example" />
+        <img src="/images/portfolio/signal-wave-1.jpg" alt="Signal Wave System" />
+        <img src="/images/portfolio/signal-wave-2.jpg" alt="Monitor Scan Wave" />
+        <img src="/images/portfolio/signal-wave-3.jpg" alt="Audio Reactive Meter" />
+        <img src="/images/portfolio/signal-wave-4.jpg" alt="Sci-fi HUD Example" />
 </div>
 
 
