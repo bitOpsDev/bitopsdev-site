@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
@@ -25,7 +24,6 @@ const allItems = (await getCollection('portfolio')).sort(
 				<p class="subtitle">Unity Assets • Tutorials • Blender Models • Tools</p>
 			</section>
 
-			<!-- Sub Navigation + Search -->
 			<div class="subnav">
 				<div class="filters">
 					<button class="filter-btn active" data-filter="All">All</button>
@@ -41,13 +39,16 @@ const allItems = (await getCollection('portfolio')).sort(
 				<ul class="portfolio-grid">
 					{
 						allItems.map((item) => (
-							<li class="portfolio-item" 
+							<li class="portfolio-item"
 								data-tags={(item.data.tags || []).join(' ').toLowerCase()}
 								data-title={item.data.title.toLowerCase()}
 								data-description={item.data.description.toLowerCase()}>
 								<a href={`/portfolio/${item.id}`}>
 									{item.data.heroImage && (
-										<Image width={720} height={360} src={item.data.heroImage} alt="" />
+										<img
+											src={item.data.heroImage.src}
+											alt={item.data.title}
+										/>
 									)}
 									<h4 class="title">{item.data.title}</h4>
 									<p class="description">{item.data.description}</p>
