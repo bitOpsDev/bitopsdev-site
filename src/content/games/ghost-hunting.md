@@ -32,9 +32,9 @@ Here's the latest update from the project:
 
 ### Screenshots & Gallery
 
-![Screenshot 1](../assets/images/games/ghost-hunting-1.jpg)
-![Screenshot 2](../assets/images/games/ghost-hunting-2.jpg)
-![Screenshot 3](../assets/images/games/ghost-hunting-3.jpg)
+![Screenshot 1](../../assets/images/games/ghost-hunting-1.jpg)
+![Screenshot 2](../../assets/images/games/ghost-hunting-2.jpg)
+![Screenshot 3](../../assets/images/games/ghost-hunting-3.jpg)
 
 *(More screenshots and concept art will be added as development continues)*
 
