@@ -30,10 +30,10 @@ Here's the latest update from the project:
     </iframe>
 </div>
 
-### Screenshots & Gallery
-
 <img src="/ghost-hunting-1.jpg" alt="Nathan - BitOpsDev" class="hero-image" />
-![Screenshot 1](../../assets/images/games/ghost-hunting-1.jpg)
+
+### Screenshots & Gallery
+![Screenshot 1](/ghost-hunting-1.jpg)
 ![Screenshot 2](../../assets/images/games/ghost-hunting-2.jpg)
 ![Screenshot 3](../../assets/images/games/ghost-hunting-3.jpg)
 
