@@ -4,7 +4,7 @@ description: "A co-op horror multiplayer game built in Unity"
 pubDate: 2026-04-28
 featured: true
 status: "In Progress"
-heroImage: "./ghost-hunting-hero.jpg"
+heroImage: "/images/games/ghost-hunting-hero.jpg"
 tags: ["Unity", "Multiplayer", "Horror"]
 ---
 
@@ -33,9 +33,9 @@ Here's the latest update from the project:
 <img src="/ghost-hunting-1.jpg" alt="Nathan - BitOpsDev" class="hero-image" />
 
 ### Screenshots & Gallery
-![Screenshot 1](/ghost-hunting-1.jpg)
-![Screenshot 2](../../assets/images/games/ghost-hunting-2.jpg)
-![Screenshot 3](../../assets/images/games/ghost-hunting-3.jpg)
+![Screenshot 1](/images/games/ghost-hunting-1.jpg)
+![Screenshot 2](/images/games/assets/images/games/ghost-hunting-2.jpg)
+![Screenshot 3](/images/games/assets/images/games/ghost-hunting-3.jpg)
 
 *(More screenshots and concept art will be added as development continues)*
 
