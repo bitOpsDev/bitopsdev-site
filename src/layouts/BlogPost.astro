@@ -20,16 +20,20 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				margin: 0;
 			}
 			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-				width: 100%;
-				height: auto;
-			}
+    width: 100%;
+    height: 420px;           /* Adjust height as needed */
+    overflow: hidden;
+    border-radius: 12px;     /* Rounded corners on the container */
+    margin-bottom: 2rem;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       
+    object-position: center; /* This centers the crop vertically */
+    display: block;
+}
 			.prose {
 				width: 720px;
 				max-width: calc(100% - 2em);

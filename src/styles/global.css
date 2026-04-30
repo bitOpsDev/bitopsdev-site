@@ -260,17 +260,3 @@ hr {
     border-radius: 12px;
 }
 
-.hero-image {
-    width: 100%;
-    height: 420px;           /* Adjust this height as needed */
-    overflow: hidden;
-    margin-bottom: 2rem;
-}
-
-.hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;       /* This crops the image nicely */
-    object-position: center; /* Centers the crop */
-    display: block;
-}
