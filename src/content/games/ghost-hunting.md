@@ -32,7 +32,7 @@ Here's the latest update from the project:
 
 ### Screenshots & Gallery
 
-![Screenshot 1](../../assets/images/games/ghost-hunting-1.jpg)
+<Image src = "../../assets/images/games/ghost-hunting-1.jpg" alt="Screenshot 1" />
 ![Screenshot 2](../../assets/images/games/ghost-hunting-2.jpg)
 ![Screenshot 3](../../assets/images/games/ghost-hunting-3.jpg)
 
