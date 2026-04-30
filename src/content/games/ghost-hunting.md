@@ -4,7 +4,7 @@ description: "A co-op horror multiplayer game built in Unity"
 pubDate: 2026-04-28
 featured: true
 status: "In Progress"
-heroImage: "/images/games/ghost-hunting-hero.jpg"
+heroImage: "../../assets/images/games/ghost-hunting-hero.jpg"
 tags: ["Unity", "Multiplayer", "Horror"]
 ---
 

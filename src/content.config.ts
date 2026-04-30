@@ -16,13 +16,16 @@ const blog = defineCollection({
 
 const games = defineCollection({
 	loader: glob({ base: './src/content/games', pattern: '**/*.{md,mdx}' }),
-	schema:({ image }) => z.object({
-			title: z.string(),
-			description: z.string(),
-			pubDate: z.coerce.date(),
-			updatedDate: z.coerce.date().optional(),
-			heroImage: z.optional(image()),
-		}),
+	schema: ({ image }) => z.object({
+		title: z.string(),
+		description: z.string(),
+		pubDate: z.coerce.date(),
+		updatedDate: z.coerce.date().optional(),
+		heroImage: z.optional(image()),
+		featured: z.boolean().default(false),
+		status: z.string().optional(),
+		tags: z.array(z.string()).default([]),
+	}),
 });
 
 const portfolio = defineCollection({
