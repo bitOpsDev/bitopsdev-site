@@ -1,0 +1,8 @@
+Contact: mailto:bitopsdev@gmail.com
+Expires: 2027-04-30T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://bitopsdev.com/.well-known/security.txt
+Policy: https://bitopsdev.com/security-policy
+
+# Vulnerability Disclosure Policy
+# This site is run by a solo developer. Thank you for helping keep it secure.
