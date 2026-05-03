@@ -6,12 +6,12 @@ heroImage: "/images/portfolio/2048-unity-hero.jpg"
 tags: ["Unity Tutorial", "2048", "C#", "Gamedev", "Puzzle Game"]
 ---
 
-<!--<div class="game-container wide-game">
+<div class="game-container wide-game">
     <iframe 
-        src="/games/2048-game/2048-game.html"
+        src="https://bitopsdev.github.io/unity-webgl-builds/2048-game.html"
         allowfullscreen>
     </iframe>
-</div>-->
+</div>
 
 <div class="youtube-embed">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLWeGoBm1YHViKSkw7Qox9QgFje3PREEVu" title="2048 Unity Tutorial Series" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
