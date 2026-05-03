@@ -8,7 +8,7 @@ tags: ["Unity Tutorial", "2048", "C#", "Gamedev", "Puzzle Game"]
 
 <div class="game-container wide-game">
     <iframe 
-        src="https://bitopsdev.github.io/unity-webgl-builds/2048-game.html"
+        src="https://bitopsdev.github.io/unity-webgl-builds/index.html"
         allowfullscreen>
     </iframe>
 </div>
