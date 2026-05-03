@@ -12,7 +12,7 @@ const posts = (await getCollection('portfolio')).sort(
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 	<head>
 		<BaseHead title={`Portfolio | ${SITE_TITLE}`} description="Unity Assets, Tutorials, Blender work & more" />
 	</head>
@@ -69,7 +69,74 @@ const posts = (await getCollection('portfolio')).sort(
 </html>
 
 <style>
-  /* ... your existing styles ... */
+  main {
+    width: 960px;
+    max-width: calc(100% - 2em);
+    margin: auto;
+  }
+
+  .page-header {
+    text-align: center;
+    padding: 4rem 1rem 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+    color: rgb(var(--gray));
+  }
+
+  .subnav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgb(var(--gray-light));
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+
+  [data-theme="dark"] .subnav {
+    background: #161b22;
+  }
+
+  .filters button {
+    padding: 0.6rem 1.2rem;
+    background: transparent;
+    border: 1px solid rgb(var(--gray));
+    color: rgb(var(--gray-dark));
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  [data-theme="dark"] .filters button {
+    color: #c9d1d9;
+    border-color: #30363d;
+  }
+
+  .filters button.active,
+  .filters button:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+  }
+
+  .search-input {
+    padding: 0.7rem 1rem;
+    background: rgb(var(--gray-light));
+    border: 1px solid rgb(var(--gray));
+    border-radius: 9999px;
+    color: rgb(var(--gray-dark));
+    width: 280px;
+  }
+
+  [data-theme="dark"] .search-input {
+    background: #0d1117;
+    border-color: #30363d;
+    color: white;
+  }
 
   .portfolio-grid {
     display: grid;
@@ -78,10 +145,6 @@ const posts = (await getCollection('portfolio')).sort(
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-
-  .portfolio-item {
-    height: 100%;
   }
 
   .portfolio-hero {
@@ -114,7 +177,7 @@ const posts = (await getCollection('portfolio')).sort(
   function filterItems() {
     const items = document.querySelectorAll('.portfolio-item');
     items.forEach(item => {
-      const el = item;
+      const el = item as HTMLElement;
       const tags = el.dataset.tags || '';
       const title = el.dataset.title || '';
 
@@ -126,21 +189,19 @@ const posts = (await getCollection('portfolio')).sort(
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    // Filter buttons
     document.querySelectorAll('.filter-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        currentFilter = btn.dataset.filter;
+        currentFilter = btn.dataset.filter || 'All';
         filterItems();
       });
     });
 
-    // Search input
-    const searchInput = document.getElementById('portfolio-search');
+    const searchInput = document.getElementById('portfolio-search') as HTMLInputElement;
     if (searchInput) {
       searchInput.addEventListener('input', (e) => {
-        searchTerm = e.target.value;
+        searchTerm = (e.target as HTMLInputElement).value;
         filterItems();
       });
     }
