@@ -61,7 +61,3 @@ Interactive demos for each system with real-time inspector controls.
 </div>
 
 **Available soon on the Unity Asset Store.**
-
-Would you like me to adjust anything (tone, length, add sections like "Tech Specs" or "Use Cases", etc.)?
-
-Also, let me know the actual YouTube video ID when you're ready and I'll update the embed.
