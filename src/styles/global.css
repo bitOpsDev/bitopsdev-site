@@ -270,13 +270,12 @@ hr {
 .youtube-embed iframe {
     width: 100%;
     max-width: 100%;
-    height: 400px;           /* Good default for 16:9 */
+    height: 400px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     border: none;
 }
 
-/* Responsive adjustment */
 @media (max-width: 720px) {
     .youtube-embed iframe {
         height: 340px;
@@ -285,12 +284,13 @@ hr {
 
 .game-container {
     width: 100%;
-    max-width: 960px;
+    max-width: 720px;
     margin: 2rem auto;
-    padding: 15px;
-    background: #1a1a1a;
+    padding: 12px;
+    background: #161b22;
+    border: 1px solid #30363d;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
     overflow: hidden;
 }
 
@@ -299,14 +299,14 @@ hr {
 }
 
 .game-container iframe {
-    border-radius: 8px;
-    width: 960px;
-    height: 720px;
-    border: none;
     display: block;
-    transform: scale(0.75);
-    transform-origin: top left;
-    margin-bottom: calc(-820px * 0.25);
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    min-height: 420px;
+    border: none;
+    border-radius: 8px;
+    background: #000;
 }
 
 .download-section {
@@ -316,19 +316,47 @@ hr {
 
 .download-btn {
     display: inline-block;
-    background: #4CAF50;
-    color: white;
+    background: var(--accent);
+    color: #0d1117;
     padding: 14px 32px;
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: 700;
     text-decoration: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+    border-radius: 9999px;
+    box-shadow: 0 4px 15px rgba(0, 229, 255, 0.25);
     transition: all 0.3s ease;
 }
 
 .download-btn:hover {
-    background: #45a049;
+    background: #00f0ff;
+    color: #0d1117;
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.4);
+    box-shadow: 0 8px 20px rgba(0, 229, 255, 0.35);
+}
+
+.download-note {
+    margin-top: 0.75rem;
+    color: rgb(var(--gray));
+    font-size: 0.95rem;
+}
+
+.status-callout {
+    margin: 2.5rem 0;
+    padding: 1.25rem 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #30363d;
+    background: #161b22;
+    text-align: center;
+}
+
+.status-callout strong {
+    display: block;
+    color: var(--accent);
+    margin-bottom: 0.35rem;
+}
+
+.status-callout p {
+    margin: 0;
+    color: rgb(var(--gray));
+    font-size: 0.95rem;
 }

@@ -10,7 +10,7 @@ type Props = CollectionEntry<'portfolio'>['data'];
 const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="en" data-theme="dark">
 	<head>
 		<BaseHead title={title} description={description} />
 		<style>
@@ -20,20 +20,20 @@ const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.prop
 				margin: 0;
 			}
 			.hero-image {
-    width: 100%;
-    height: 420px;           /* Adjust height as needed */
-    overflow: hidden;
-    border-radius: 12px;     /* Rounded corners on the container */
-    margin-bottom: 2rem;
-}
+				width: 100%;
+				height: 420px;
+				overflow: hidden;
+				border-radius: 12px;
+				margin-bottom: 2rem;
+			}
 
-.hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;       
-    object-position: center; /* This centers the crop vertically */
-    display: block;
-}
+			.hero-image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+				display: block;
+			}
 			.prose {
 				width: 720px;
 				max-width: calc(100% - 2em);
@@ -57,6 +57,26 @@ const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.prop
 			.last-updated-on {
 				font-style: italic;
 			}
+			.tag-list {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5rem;
+				justify-content: center;
+				margin: 1rem 0 0;
+				padding: 0;
+				list-style: none;
+			}
+			.tag-list li {
+				padding: 0.35rem 0.85rem;
+				border-radius: 9999px;
+				border: 1px solid rgb(var(--gray-light));
+				font-size: 0.85rem;
+				color: rgb(var(--gray));
+			}
+			[data-theme="dark"] .tag-list li {
+				border-color: #30363d;
+				color: #8b949e;
+			}
 		</style>
 	</head>
 
@@ -66,8 +86,8 @@ const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.prop
 			<article>
 				<div class="hero-image">
 					{heroImage && (
-						<img 
-							src={heroImage} 
+						<img
+							src={heroImage}
 							alt={title}
 							width="1020"
 							height="510"
@@ -87,6 +107,13 @@ const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.prop
 							}
 						</div>
 						<h1>{title}</h1>
+						{tags && tags.length > 0 && (
+							<ul class="tag-list">
+								{tags.map((tag) => (
+									<li>{tag}</li>
+								))}
+							</ul>
+						)}
 						<hr />
 					</div>
 					<slot />
