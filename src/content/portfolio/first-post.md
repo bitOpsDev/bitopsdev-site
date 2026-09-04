@@ -56,6 +56,22 @@ tags: ["Unity Asset", "UI", "Tool", "Audio Reactive"]
 - Full ScriptableObject workflow
 - Interactive demo scenes with real-time inspector controls
 
+### Get the Asset
+
+<div class="download-section">
+    <a
+        href="https://assetstore.unity.com/packages/2d/gui/3-in-1-ui-waves-signal-monitor-audio-waveforms-363514"
+        class="download-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Buy on Unity Asset Store
+    </a>
+    <p class="download-note">
+        Available now on the Unity Asset Store.
+    </p>
+</div>
+
 ### Watch the Overview
 
 <div class="youtube-embed">
@@ -70,9 +86,4 @@ tags: ["Unity Asset", "UI", "Tool", "Audio Reactive"]
         allowfullscreen
         loading="lazy"
     ></iframe>
-</div>
-
-<div class="status-callout">
-    <strong>Coming soon to the Unity Asset Store.</strong>
-    <p>Follow on YouTube for release updates.</p>
 </div>
