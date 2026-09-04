@@ -305,8 +305,7 @@ hr {
     height: 720px;
     border: none;
     display: block;
-    background: #1a1a1a;
-    color-scheme: dark;
+    background-color: #1a1a1a;
     transform: scale(0.75);
     transform-origin: top left;
     margin-bottom: calc(-720px * 0.25);
