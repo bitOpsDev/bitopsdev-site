@@ -288,7 +288,7 @@ hr {
     max-width: 720px;
     margin: 2rem auto;
     padding: 15px;
-    background: #161b22;
+    background: #1a1a1a;
     border: 1px solid #30363d;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
@@ -305,7 +305,8 @@ hr {
     height: 720px;
     border: none;
     display: block;
-    background: #000;
+    background: #1a1a1a;
+    color-scheme: dark;
     transform: scale(0.75);
     transform-origin: top left;
     margin-bottom: calc(-720px * 0.25);
