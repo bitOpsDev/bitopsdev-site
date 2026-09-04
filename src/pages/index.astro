@@ -15,63 +15,55 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 		<main>
 			<!-- Full Width Banner Hero -->
-			
-
-			<!-- Current Focus -->
-			<section class="section">
-				<h2 class="text-center">Welcome to bitOps Dev</h2>
-				<div class="youtube-embed">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/0R2kAlBcMsk?si=463bJOWKjqXZPLct" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-<div class="hero-buttons">
-            <a href="https://www.youtube.com/@bitOpsDev/videos" target="_blank" class="btn-primary">Subscribe on YouTube</a>
-        </div>
-				<p>
-            Solo Unity developer building multiplayer games, professional assets, 
-            and sharing the real development journey.
-        </p>
-        <p>
-            Watch my YouTube tutorials on Unity, Blender, and game development. 
-            Download free code and assets, and follow along as I build my next big project.
-        </p>
-		
-		
-			</section>
-			<br>
-
-			<!-- Full Width Banner Hero -->
 			<section class="hero-banner">
-				<img src="/Banner.jpg" alt="BitOpsDev Banner" class="banner-image" />
+				<img src="/Banner.jpg" alt="Sci-fi corridor from the current multiplayer horror game" class="banner-image" />
 				<div class="hero-overlay">
-					<h1>Current Project</h1>
-					<p class="tagline">I'm actively working on a new multiplayer game built in Unity.</p>
-					
+					<h1>Building a co-op horror game in Unity</h1>
+					<p class="tagline">Solo developer shipping multiplayer games, assets, and the real build journey.</p>
 					<div class="hero-buttons">
-						<a href="/games" class="btn-primary">CHECK IT OUT</a>
+						<a href="/games" class="btn-primary">See the project</a>
 					</div>
 				</div>
 			</section>
 
-						<!-- Featured Work - Visual Cards -->
+			<!-- Welcome / YouTube -->
+			<section class="section follow-section">
+				<h2 class="text-center">Welcome to bitOps Dev</h2>
+				<p class="intro-copy">
+					Tutorials, assets, and progress videos on Unity, Blender, and game development.
+				</p>
+				<div class="youtube-embed">
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/0R2kAlBcMsk?si=463bJOWKjqXZPLct"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen
+					></iframe>
+				</div>
+				<div class="hero-buttons">
+					<a href="https://www.youtube.com/@bitOpsDev/videos" target="_blank" class="btn-primary">Subscribe on YouTube</a>
+				</div>
+			</section>
+
+			<!-- Featured Work - Visual Cards -->
 			<section class="featured-section">
 				<h2 class="text-center mb-12">Featured Work</h2>
 				<div class="featured-grid">
-					
-					<!-- Games Card -->
 					<a href="/games" class="featured-card games-card">
 						<h3>Games</h3>
 					</a>
-					
-					<!-- Portfolio Card -->
+
 					<a href="/portfolio" class="featured-card portfolio-card">
 						<h3>Portfolio</h3>
 					</a>
-					
-					<!-- Journal Card -->
+
 					<a href="/blog" class="featured-card journal-card">
 						<h3>Journal</h3>
 					</a>
-					
 				</div>
 			</section>
 		</main>
@@ -81,10 +73,10 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 </html>
 
 <style>
-    .hero-banner {
+  .hero-banner {
     position: relative;
-    width: 100vw;                    /* Full viewport width */
-    margin-left: calc(50% - 50vw);   /* Full bleed trick */
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
     height: 65vh;
     min-height: 480px;
     max-height: 700px;
@@ -94,7 +86,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
   .banner-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;               /* Keeps full image visible */
+    object-fit: cover;
     object-position: center;
   }
 
@@ -108,14 +100,14 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
     justify-content: center;
     text-align: center;
     padding: 2rem 1.5rem;
-    color: white;                    /* Force white */
+    color: white;
     z-index: 2;
   }
 
   .hero-overlay h1 {
-    font-size: 3.6rem;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
     margin-bottom: 1rem;
-    color: white !important;         /* Force white even in light mode */
+    color: white !important;
     text-shadow: 0 4px 20px rgba(0, 0, 0, 0.85);
   }
 
@@ -123,8 +115,19 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
     font-size: 1.45rem;
     max-width: 700px;
     margin-bottom: 2.5rem;
-    color: white !important;         /* Force white */
+    color: white !important;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  }
+
+  .follow-section {
+    padding-top: 3.5rem;
+  }
+
+  .intro-copy {
+    max-width: 640px;
+    margin: 0 auto 1.75rem;
+    text-align: center;
+    line-height: 1.6;
   }
 
   .hero-buttons {
@@ -162,7 +165,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
     background: rgba(0, 229, 255, 0.1);
   }
 
-    .featured-section {
+  .featured-section {
     padding: 5rem 1rem;
   }
 
@@ -202,7 +205,6 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
   }
 
-  /* Background Images */
   .games-card {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('/games-bg.jpg');
     background-size: cover;
@@ -220,9 +222,18 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
     background-size: cover;
     background-position: center;
   }
+
   .text-center {
     text-align: center;
-}
+  }
 
+  @media (max-width: 720px) {
+    .featured-grid {
+      grid-template-columns: 1fr;
+    }
 
+    .featured-card {
+      height: 240px;
+    }
+  }
 </style>
