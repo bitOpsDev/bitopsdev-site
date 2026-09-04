@@ -282,11 +282,12 @@ hr {
     }
 }
 
+/* Unity WebGL embeds are fixed 960x720; scale them to fit the content column. */
 .game-container {
     width: 100%;
     max-width: 720px;
     margin: 2rem auto;
-    padding: 12px;
+    padding: 15px;
     background: #161b22;
     border: 1px solid #30363d;
     border-radius: 12px;
@@ -299,14 +300,15 @@ hr {
 }
 
 .game-container iframe {
-    display: block;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 3;
-    min-height: 420px;
-    border: none;
     border-radius: 8px;
+    width: 960px;
+    height: 720px;
+    border: none;
+    display: block;
     background: #000;
+    transform: scale(0.75);
+    transform-origin: top left;
+    margin-bottom: calc(-720px * 0.25);
 }
 
 .download-section {
