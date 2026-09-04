@@ -6,58 +6,64 @@ heroImage: "/images/portfolio/2048-unity-hero.jpg"
 tags: ["Unity Tutorial", "2048", "C#", "Gamedev", "Puzzle Game"]
 ---
 
+**How to Build a 2048 Clone in Unity** is a complete 13-part tutorial series that takes you from zero to a fully working 2048 game — grid setup, tile movement, merging, scoring, and game over.
+
+### Play the Demo
+
+Use the arrow keys or WASD.
+
 <div class="game-container wide-game">
-    <iframe 
+    <iframe
         src="https://bitopsdev.github.io/unity-webgl-builds/2048/index.html"
-        allowfullscreen>
-    </iframe>
+        title="Playable 2048 Unity WebGL demo"
+        allowfullscreen
+        loading="lazy"
+    ></iframe>
 </div>
 
-<div class="youtube-embed">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLWeGoBm1YHViKSkw7Qox9QgFje3PREEVu" title="2048 Unity Tutorial Series" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+### What the Series Covers
 
-**How to Build a 2048 Clone in Unity** is a complete 13-part tutorial series that takes you from zero to a fully working 2048 game.
-
-The series covers the entire development process:
-- Grid and UI setup
-- Tile spawning and movement
-- Merging logic
-- Scoring system
-- Game over detection
-
-### Series Breakdown
-
-**Core Systems Covered**
-- Grid Layout using Unity UGUI
-- Tile Prefab system with ScriptableObject states
-- Input handling (WASD / Arrow Keys)
+**Core systems**
+- Grid layout with Unity UGUI
+- Tile prefabs with ScriptableObject states
+- Input handling (WASD / arrow keys)
 - Smooth tile movement and animation
 - Merge detection and combining logic
 - Dynamic scoring with UI feedback
-- Win/lose condition handling
+- Win / lose condition handling
 
-**What You’ll Build**
+**What you’ll build**
 - Clean, responsive 4x4 grid
 - Random tile spawning after each move
-- Tile merging with score multiplier
+- Tile merging with score updates
 - Game Over screen when no moves remain
 - Polished visual feedback and animations
 
-### Watch the Full Series
+### Watch the Series
 
+<div class="youtube-embed">
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/videoseries?list=PLWeGoBm1YHViKSkw7Qox9QgFje3PREEVu"
+        title="2048 Unity Tutorial Series"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        loading="lazy"
+    ></iframe>
+</div>
 
-
-**Playlist Link**: [How to Make 2048 in Unity (13 Videos)](https://www.youtube.com/playlist?list=PLWeGoBm1YHViKSkw7Qox9QgFje3PREEVu)
+[Full playlist on YouTube](https://www.youtube.com/playlist?list=PLWeGoBm1YHViKSkw7Qox9QgFje3PREEVu)
 
 ### Download the Unity Package
 
 <div class="download-section">
     <a href="/downloads/games/InfoGamer_2048.unitypackage" class="download-btn" download>
-        ⬇️ Download 2048 Unity Package
+        Download 2048 Unity Package
     </a>
-    <p style="margin-top: 0.5rem; color: #888;">
-        Includes all scenes, scripts, and prefabs from the tutorial series.
+    <p class="download-note">
+        Includes the scenes, scripts, and prefabs from the tutorial series.
     </p>
 </div>
-
