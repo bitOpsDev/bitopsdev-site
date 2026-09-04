@@ -19,18 +19,20 @@ I'm actively working on core gameplay systems, networking, and building the eeri
 Here's the latest update from the project:
 
 <div class="youtube-embed">
-    <iframe 
-        width="100%" 
-        height="400" 
-        src="https://www.youtube.com/embed/videoseries?list=PLWeGoBm1YHVhRVhmrPabMHpSWZ4WqNj3V" 
-        title="YouTube playlist" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/videoseries?list=PLWeGoBm1YHVhRVhmrPabMHpSWZ4WqNj3V"
+        title="Multiplayer horror game development playlist"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        loading="lazy"
+    ></iframe>
 </div>
 
-<img src="/ghost-hunting-1.jpg" alt="Nathan - BitOpsDev" class="hero-image" />
+<img src="/ghost-hunting-1.jpg" alt="In-progress multiplayer horror game screenshot" class="hero-image" />
 
 ### Screenshots & Gallery
 ![Screenshot 1](/images/games/ghost-hunting-1.jpg)

@@ -62,7 +62,7 @@ tags: ["Unity Asset", "UI", "Tool", "Audio Reactive"]
     <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/ve4xprUykl4?si=1ryMOZv_m48j3DsJ"
+        src="https://www.youtube.com/embed/ve4xprUykl4"
         title="3-in-1 UI Waves overview"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
