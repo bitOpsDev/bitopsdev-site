@@ -24,6 +24,38 @@ Snowball is still early and isn't playable by the public yet. The core loop is c
 
 It's built with **Unity 6 (URP)** and **Photon Fusion 2** for multiplayer.
 
+### Watch Development
+
+Here's where the project started, and a look at how AI helped with the placeholder models:
+
+<div class="youtube-embed">
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/iVdmObATbN8"
+        title="I'm Using AI to Build a Snowball .io Game"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        loading="lazy"
+    ></iframe>
+</div>
+
+<div class="youtube-embed">
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/wqbkuSRf-5w"
+        title="One AI Prompt Made All My Game's Low-Poly Models in Blender"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        loading="lazy"
+    ></iframe>
+</div>
+
 ### Built with AI, as an experiment
 
 Snowball is also an experiment in how far AI can help one person build a video game.
