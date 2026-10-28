@@ -4,6 +4,7 @@ description: "A free multiplayer io-style game where you roll a snowball around 
 pubDate: 2026-10-28
 featured: false
 status: "In Development"
+heroImage: "/images/games/snowball-hero.jpg"
 tags: ["Unity", "Multiplayer", "io Game", "AI-Assisted"]
 ---
 
@@ -23,6 +24,20 @@ The goal is a game that's quick to jump into and free to play. The first target 
 Snowball is still early and isn't playable by the public yet. The core loop is coming together, but a lot of the art is still placeholder, and I still have performance and load-time work ahead of me. I'm not promising a release date yet.
 
 It's built with **Unity 6 (URP)** and **Photon Fusion 2** for multiplayer.
+
+### Screenshots
+
+These are work-in-progress shots from the current build, so expect placeholder props and rough edges.
+
+![Snowball early in a round, a small snowball rolling through pine trees with the minimap and scoreboard](/images/games/snowball-1.jpg)
+
+![A growing snowball rolling past buildings and props in the town](/images/games/snowball-2.jpg)
+
+![A larger snowball rolling around the town fountain while the score climbs](/images/games/snowball-3.jpg)
+
+![A big snowball in the middle of the town square with houses, trees, and a fountain around it](/images/games/snowball-4.jpg)
+
+![Another view of the snowball near the fountain, with buildings and a snowy ridge in the background](/images/games/snowball-5.jpg)
 
 ### Watch Development
 
