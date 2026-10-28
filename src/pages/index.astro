@@ -65,9 +65,23 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 						<p>
 							A free multiplayer io-style game where you roll a snowball around a winter world, grow as you go, and try to be the last ball standing. It's in development, and I'm building it with AI help as an experiment.
 						</p>
+						<div class="spotlight-video">
+							<div class="youtube-embed">
+								<iframe
+									width="560"
+									height="315"
+									src="https://www.youtube.com/embed/iVdmObATbN8"
+									title="I'm Using AI to Build a Snowball .io Game"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									referrerpolicy="strict-origin-when-cross-origin"
+									allowfullscreen
+									loading="lazy"
+								></iframe>
+							</div>
+						</div>
 						<div class="spotlight-buttons">
 							<a href="/games/snowball/" class="btn-primary">Read about Snowball</a>
-							<a href="https://youtu.be/iVdmObATbN8" target="_blank" rel="noopener" class="btn-secondary">Watch the video</a>
 						</div>
 					</div>
 				</div>
@@ -251,6 +265,11 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
   .spotlight-copy .spotlight-label {
     max-width: none;
+  }
+
+  .spotlight-video {
+    max-width: 720px;
+    margin: 1.25rem auto 0;
   }
 
   .spotlight-buttons {
