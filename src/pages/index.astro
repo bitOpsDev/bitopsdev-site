@@ -49,6 +49,30 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 				</div>
 			</section>
 
+			<!-- Spotlight: Snowball -->
+			<section class="spotlight-section">
+				<div class="spotlight-card">
+					<a href="/games/snowball/" class="spotlight-image-link" aria-label="Read about Snowball">
+						<img
+							src="/images/games/snowball-hero.jpg"
+							alt="A snowball rolling through the town in Snowball, a free multiplayer io game in development"
+							loading="lazy"
+						/>
+					</a>
+					<div class="spotlight-copy">
+						<p class="spotlight-label">New project</p>
+						<h2>Snowball</h2>
+					<p>
+						A free multiplayer io-style game where you roll a snowball around a winter world, grow as you go, and try to be the last ball standing. It's in development, and I'm building it with AI help as an experiment.
+					</p>
+						<div class="spotlight-buttons">
+							<a href="/games/snowball/" class="btn-primary">Read about Snowball</a>
+							<a href="https://youtu.be/iVdmObATbN8" target="_blank" rel="noopener" class="btn-secondary">Watch the video</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<!-- Featured Work - Visual Cards -->
 			<section class="featured-section">
 				<h2 class="text-center mb-12">Featured Work</h2>
@@ -165,6 +189,68 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
     background: rgba(0, 229, 255, 0.1);
   }
 
+  .spotlight-section {
+    padding: 4rem 1rem 1rem;
+  }
+
+  .spotlight-card {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid rgba(0, 229, 255, 0.25);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  }
+
+  .spotlight-image-link {
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .spotlight-image-link img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .spotlight-image-link:hover img {
+    transform: scale(1.03);
+  }
+
+  .spotlight-label {
+    margin: 0 0 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #00e5ff;
+  }
+
+  .spotlight-copy h2 {
+    margin: 0 0 0.75rem;
+    font-size: 2.2rem;
+  }
+
+  .spotlight-copy p {
+    line-height: 1.6;
+  }
+
+  .spotlight-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
   .featured-section {
     padding: 5rem 1rem;
   }
@@ -225,6 +311,18 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
   .text-center {
     text-align: center;
+  }
+
+  @media (max-width: 820px) {
+    .spotlight-card {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    .spotlight-buttons {
+      justify-content: center;
+    }
   }
 
   @media (max-width: 720px) {
